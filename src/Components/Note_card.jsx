@@ -13,8 +13,8 @@ const Note_card = (props) => {
   } , [selected_note])
   return (
     <>
-      <div onClick={handleText} className="m-[2rem] flex flex-col justify-center items-center w-fit">
-          <img className="w-[20rem] h-[20rem] rounded-2xl" src={props.data.image} alt="image" />
+      <div onClick={handleText} className="md:m-[2rem] flex flex-col justify-center items-center w-fit">
+          <img className="w-[30rem] h-[20rem] rounded-2xl" src={props.data.image} alt="image" />
           <h1>{props.data.title}</h1>
       </div>
       

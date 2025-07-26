@@ -8,14 +8,15 @@ const Note_show_popup = (props) => {
   const handleText = () => {
     setNote_popup(false)
   }
-    console.log(props)
+  console.log(props)
+  const isMobile = window.innerWidth <= 768;
   return (
     <Popup contentStyle={{
           borderRadius: "1rem",
           overflowY: "auto",
           height: "max",
       maxHeight: "50rem",
-      width: "50rem",
+      width: isMobile ? "90%" : "50rem",
           overflowX : "hidden"
         
         
